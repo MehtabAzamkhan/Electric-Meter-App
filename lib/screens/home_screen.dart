@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -10,7 +11,10 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setPreferredOrientations(
+        [DeviceOrientation.portraitUp, DeviceOrientation.portraitDown]);
     return Scaffold(
+      backgroundColor: Colors.black,
       body: Column(
         children: [
           Padding(
@@ -18,10 +22,15 @@ class _HomeScreenState extends State<HomeScreen> {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: const [
-                Icon(Icons.clear_all, color: Colors.black),
-                Text("Electric Meter",
-                    style:
-                        TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+                Icon(Icons.clear_all, color: Colors.white),
+                Text(
+                  "Electric Meter",
+                  style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white),
+                ),
+                Icon(Icons.settings, color: Colors.white)
               ],
             ),
           ),
@@ -35,22 +44,101 @@ class _HomeScreenState extends State<HomeScreen> {
                     padding: EdgeInsets.all(8.0),
                     child: Text(
                       "Current",
-                      style:
-                          TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                      style: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white),
                     ),
                   ),
                   Padding(
                     padding: EdgeInsets.all(8.0),
                     child: Text(
                       "C20",
-                      style:
-                          TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                      style: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white),
                     ),
                   ),
                 ],
               )
             ],
           ),
+          SizedBox(height: 20),
+          Column(
+            children: const [
+              Padding(
+                padding: EdgeInsets.all(8.0),
+                child: Text(
+                  "Voltage",
+                  style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white),
+                ),
+              ),
+              Padding(
+                padding: EdgeInsets.all(8.0),
+                child: Text(
+                  "C20",
+                  style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white),
+                ),
+              ),
+            ],
+          ),
+          SizedBox(height: 20),
+          Column(
+            children: const [
+              Padding(
+                padding: EdgeInsets.all(8.0),
+                child: Text(
+                  "Power",
+                  style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white),
+                ),
+              ),
+              Padding(
+                padding: EdgeInsets.all(8.0),
+                child: Text(
+                  "C20",
+                  style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white),
+                ),
+              ),
+            ],
+          ),
+          SizedBox(height: 20),
+          Column(
+            children: const [
+              Padding(
+                padding: EdgeInsets.all(8.0),
+                child: Text(
+                  "KWH",
+                  style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white),
+                ),
+              ),
+              Padding(
+                padding: EdgeInsets.all(8.0),
+                child: Text(
+                  "C20",
+                  style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white),
+                ),
+              ),
+            ],
+          )
         ],
       ),
     );

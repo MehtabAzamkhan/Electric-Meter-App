@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "951006220436",
+    "project_id": "hello-52c2a",
+    "storage_bucket": "hello-52c2a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:951006220436:android:a3cce2a36aa68aaedd6481",
+        "android_client_info": {
+          "package_name": "com.example.chalja"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "951006220436-9skppmgbgcgfqgte3df2651b8pvjt1qa.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.chalja",
+            "certificate_hash": "1fcccb275a584517060675ff1c128db5144826aa"
+          }
+        },
+        {
+          "client_id": "951006220436-8fhcp0bftf4lmhkmfssho1sso3349hqe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEQMr1i3Dd0ZFbl19vmUg9cVS0X1KuEVM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "951006220436-8fhcp0bftf4lmhkmfssho1sso3349hqe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
